@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node start.js",
+    "dev": "nodemon ./start.js",
     "watch": "nodemon ./start.js",
+    "sass": "sass --watch public/scss:public/css",
+    "sass:build": "sass public/scss:public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -19,6 +23,7 @@
     "pug": "^3.0.3"
   },
   "devDependencies": {
-    "nodemon": "^3.1.10"
+    "nodemon": "^3.1.10",
+    "sass": "^1.77.0"
   }
 }
